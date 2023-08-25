@@ -26,21 +26,21 @@ function NavBar() {
       <img src={WebsiteLogo} className='websiteLogo'/>
       <nav className={isMenuOpen ? 'nav-opened' : 'nav-closed'}>
           <button className='nav-closed-btn' onClick={handleClick}><FaTimes className='nav-closed-icon'/></button>
-          <Link to="/" onClick={handleClick}>Start Here</Link>
-          <Link to="/blog" onClick={handleClick}>Our Blog</Link>
-          <Link to="/podcast" onClick={handleClick}>Podcast</Link>
-          <Link to="/newsletter" onClick={handleClick}>Newsletter</Link>
-          <Link to="/contact" onClick={handleClick}>Get in Touch</Link>
+          <Link to="/authentik/" onClick={handleClick}>Start Here</Link>
+          <Link to="/authentik/blog" onClick={handleClick}>Our Blog</Link>
+          <Link to="/authentik/podcast" onClick={handleClick}>Podcast</Link>
+          <Link to="/authentik/newsletter" onClick={handleClick}>Newsletter</Link>
+          <Link to="/authentiknp/contact" onClick={handleClick}>Get in Touch</Link>
       </nav>
       <button className='nav-btn' onClick={handleClick}><FaBars className='nav-icon'/></button>
     </header>
 
     <Routes>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/podcast" element={<Podcast />} />
-      <Route path="/newsletter" element={<Newsletter />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/authentik/" element={<Homepage />} />
+      <Route path="/authentik/blog" element={<Blog />} />
+      <Route path="/authentik/podcast" element={<Podcast />} />
+      <Route path="/authentik/newsletter" element={<Newsletter />} />
+      <Route path="/authentik/contact" element={<Contact />} />
     </Routes>
     </>
   )
