@@ -7,10 +7,10 @@ import HomeFooter from './homepage/HomeFooter'
 function Homepage() {
   return (
     <>
-      <HomeHero />
+      {/* <HomeHero />
       <HomeStart />
       <HomeFramework />
-      <HomeFooter />
+      <HomeFooter /> */}
     </>
   )
 }
