@@ -1,0 +1,32 @@
+.footer-wrapper {
+    height: auto;
+    width: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2vw;
+}
+
+.footer-wrapper > div {
+    margin-bottom: 2vh; 
+}
+.footer-wrapper > .footer-text { order: 2; }
+
+.footer-links {
+    display: none;
+}
+
+.footer-text > img {
+    display: none;
+}
+
+.footer-quote-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-quote-div > span:nth-child(1) {
+    font-weight: bold;
+}
