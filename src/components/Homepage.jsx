@@ -1,8 +1,8 @@
 import React from 'react'
 import HomeHero from "./Homepage/HomeHero"
-import HomeStart from './homepage/HomeStart'
-import HomeFramework from './homepage/HomeFramework'
-import HomeFooter from './homepage/HomeFooter'
+import HomeStart from './Homepage/HomeStart'
+import HomeFramework from './Homepage/HomeFramework'
+import HomeFooter from './Homepage/HomeFooter'
 
 function Homepage() {
   return (
