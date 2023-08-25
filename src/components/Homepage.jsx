@@ -1,13 +1,13 @@
 import React from 'react'
-import HomeHero from "./Homepage/HomeHero"
-import HomeStart from './Homepage/HomeStart'
-import HomeFramework from './Homepage/HomeFramework'
-import HomeFooter from './Homepage/HomeFooter'
+import HomeHero from "./homepage/HomeHero"
+import HomeStart from './homepage/HomeStart'
+import HomeFramework from './homepage/HomeFramework'
+import HomeFooter from './homepage/HomeFooter'
 
 function Homepage() {
   return (
     <>
-      <HomeHero />
+      {/* <HomeHero /> */}
       <HomeStart />
       <HomeFramework />
       <HomeFooter />
