@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../css/homehero.css'
 
-function Hero() {
+function HomeHero() {
   return (
     <>
       <div className='hero-wrapper'>
