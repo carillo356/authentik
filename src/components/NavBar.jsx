@@ -36,7 +36,7 @@ function NavBar() {
     </header>
 
     <Routes>
-      <Route path="/" element={<Homepage />} />
+      <Route index element={<Homepage />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/podcast" element={<Podcast />} />
       <Route path="/newsletter" element={<Newsletter />} />
