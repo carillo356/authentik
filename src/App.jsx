@@ -3,14 +3,7 @@ import NavBar from './components//NavBar'
 
 function App() {
   return (
-      // <NavBar />
-      <>
-            <HomeHero />
-      <HomeStart />
-      <HomeFramework />
-      <HomeFooter /> 
-      </>
-
+      <NavBar />
   )
 
   
