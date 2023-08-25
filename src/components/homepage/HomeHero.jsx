@@ -19,4 +19,4 @@ function HomeHero() {
   )
 }
 
-export default Hero
+export default HomeHero
