@@ -2,7 +2,7 @@ import React from 'react'
 
 function Podcast() {
   return (
-    <div>Podcast</div>
+    <div className='animation'>Podcast</div>
   )
 }
 

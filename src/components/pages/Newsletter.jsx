@@ -2,7 +2,7 @@ import React from 'react'
 
 function Newsletter() {
   return (
-    <div>Newsletter</div>
+    <div className='animation'>Newsletter</div>
   )
 }
 

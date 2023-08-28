@@ -21,10 +21,11 @@ header > .nav-btn {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .nav-opened {
-    height: 100vh;
+    height: 90vh;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -32,6 +33,8 @@ header > .nav-btn {
     align-items: center;
     font-size: 4vh;
     gap: 6vh;
+    animation-name: anime;
+    animation-duration: 2s;
 }
 
 .nav-opened > a {

@@ -35,13 +35,13 @@ function NavBar() {
       <button className='nav-btn' onClick={handleClick}><FaBars className='nav-icon'/></button>
     </header>
 
-    <Routes>
-      <Route path="/authentik/" element={<Homepage />} />
-      <Route path="/authentik/blog" element={<Blog />} />
-      <Route path="/authentik/podcast" element={<Podcast />} />
-      <Route path="/authentik/newsletter" element={<Newsletter />} />
-      <Route path="/authentik/contact" element={<Contact />} />
-    </Routes>
+      <Routes>
+        <Route path="/authentik/" element={isMenuOpen ? '' : <Homepage />} />
+        <Route path="/authentik/blog" element={isMenuOpen ? '' : <Blog />} />
+        <Route path="/authentik/podcast" element={isMenuOpen ? '' : <Podcast />} />
+        <Route path="/authentik/newsletter" element={isMenuOpen ? '' : <Newsletter />} />
+        <Route path="/authentik/contact" element={isMenuOpen ? '' : <Contact />} />
+      </Routes>
     </>
   )
 }

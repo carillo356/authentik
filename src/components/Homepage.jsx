@@ -6,7 +6,7 @@ import HomeFooter from './homepage/HomeFooter'
 
 function Homepage() {
   return (
-    <div className='homepage-content'>
+    <div className='animation'>
       <HomeHero />
       <HomeStart />
       <HomeFramework />
