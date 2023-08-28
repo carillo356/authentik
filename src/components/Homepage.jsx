@@ -6,12 +6,12 @@ import HomeFooter from './homepage/HomeFooter'
 
 function Homepage() {
   return (
-    <>
+    <div className='homepage-content'>
       <HomeHero />
       <HomeStart />
       <HomeFramework />
       <HomeFooter />
-    </>
+    </div>
   )
 }
 

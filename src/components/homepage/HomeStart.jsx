@@ -10,8 +10,8 @@ function HomeStart() {
         <div className='start-wrapper'>
           <div className='start-text'>
               <span>Start your journey.</span>
-              <span>Come as you are. Bring your talents, your brilliance, your frustations,
-                    your struggles-and let's turn them into something awesome.
+              <span>Come as you are. Bring your talents, your brilliance, your frustations, 
+                    your struggles&#8212;and let's turn them into something awesome.
               </span>
           </div>
 
@@ -19,8 +19,9 @@ function HomeStart() {
               <div>
                   <img src={InspiredIcon}/>
                   <span>Be inspired.</span>
-                  <span>We want to give you the help and support you need to make huge strides 
-                    towards the vision you're after in your business.</span>
+                  <span>We want to give you the help and support 
+                    you need to make huge strides towards the
+                    vision you're after in your business.</span>
               </div>
 
               <div>

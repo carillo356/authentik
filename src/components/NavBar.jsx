@@ -22,15 +22,15 @@ function NavBar() {
 
   return (
     <>
-    <header className={isMenuOpen ? 'header-opened' : 'header-closed'}>
+    <header className={isMenuOpen ? 'header-opened' : 'header'}>
       <img src={WebsiteLogo} className='websiteLogo'/>
-      <nav className={isMenuOpen ? 'nav-opened' : 'nav-closed'}>
-          <button className='nav-closed-btn' onClick={handleClick}><FaTimes className='nav-closed-icon'/></button>
-          <Link to="/authentik/" onClick={handleClick}>Start Here</Link>
-          <Link to="/authentik/blog" onClick={handleClick}>Our Blog</Link>
-          <Link to="/authentik/podcast" onClick={handleClick}>Podcast</Link>
-          <Link to="/authentik/newsletter" onClick={handleClick}>Newsletter</Link>
-          <Link to="/authentiknp/contact" onClick={handleClick}>Get in Touch</Link>
+      <nav className={isMenuOpen ? 'nav-opened' : 'nav'}>
+          <button className='nav-btn' onClick={handleClick}><FaTimes className='nav-icon'/></button>
+          <Link to="/authentik/" onClick={() => setIsMenuOpen(false)}>Start Here</Link>
+          <Link to="/authentik/blog" onClick={() => setIsMenuOpen(false)}>Our Blog</Link>
+          <Link to="/authentik/podcast" onClick={() => setIsMenuOpen(false)}>Podcast</Link>
+          <Link to="/authentik/newsletter" onClick={() => setIsMenuOpen(false)}>Newsletter</Link>
+          <Link to="/authentik/contact" onClick={() => setIsMenuOpen(false)} className='bold'>Get in Touch</Link>
       </nav>
       <button className='nav-btn' onClick={handleClick}><FaBars className='nav-icon'/></button>
     </header>

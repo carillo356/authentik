@@ -23,7 +23,7 @@
 .framework-block > div {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2vh;
+    margin-bottom: 5vh;
 }
 
 .framework-block > div > span:nth-child(1) {
@@ -38,6 +38,8 @@
     background-color: white;
     height: auto;
     width: 90vw;
+    border-radius: 2px;
+    box-shadow: 0px 0px 25px 0 #0000001a;
 }
 
 .framework-email-wrapper > div {
@@ -68,12 +70,13 @@
 }
 
 .inputs-div > * {
+    font-size: 1.3rem;
     text-align: center; 
     font-style: italic;
     border: none;
     background-color: whitesmoke;
-    font-weight: 600;
-    padding: 2vh;
+    font-weight: lighter;
+    padding: 3vh;
     height: auto;
     width: auto;
     margin-bottom: 1vh; 
@@ -83,9 +86,70 @@
     margin-bottom: 3vh;
 }
 
+.checkbox-div > span {
+    font-size: 1rem;
+    padding-left: 0.5vh; 
+}
+
 .framework-email-wrapper > div > button {
     color: white;
     background-color: black;
     border: none;
-    padding: 5vw;
+    padding: 5vh;
+    border-radius: 5px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .framework-wrapper {
+        flex-direction: row;
+        font-size: 1.3rem;
+        align-items: start;
+        padding: 20vh 2vw;
+    }
+
+    .framework-wrapper > div:nth-child(1) {
+        flex-basis: 70%;
+    }
+
+    .framework-wrapper > div:nth-child(2) {
+        flex-basis: 30%;
+    }
+
+    .framework-text {
+        display: flex;
+        align-items: start;
+    }
+
+    .framework-text > span:nth-child(1) {
+        font-size: 3.9rem;
+    }
+
+    .framework-block {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5vh 0;
+    }
+
+    .framework-block > div {
+        width: 50%;
+        text-align: start;
+    }
+
+    .framework-block > div > span {
+        padding-right: 7vw;
+        line-height: 1.7;
+    }
+
+    .framework-email-wrapper > div {
+        padding: 2.5vw;
+    }
+
+    .framework-email-wrapper > div > span:nth-child(3) {
+        padding-top: 1.5vh
+    }
+
+    .framework-email-wrapper > div > button {
+        padding: 2.5vh;
+        font-size: 0.9rem;
+    }
 }

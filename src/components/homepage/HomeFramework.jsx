@@ -29,7 +29,7 @@ function HomeFramework() {
                     
                 <div>
                     <span>Authentik Community</span>
-                    <span>We believe that doing life together-both business and personal-is the only way to go about this journey.</span>
+                    <span>We believe that doing life together&#8212;both business and personal&#8212;is the only way to go about this journey.</span>
                 </div>
             </div>
         </div>

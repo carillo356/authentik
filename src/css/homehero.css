@@ -1,60 +1,124 @@
+.bg-image-text {
+    display: none;
+}
+
 .hero-wrapper {
     display: flex;
+    height: 80vh;
+    width: auto;
+    background-color: white;
+    justify-content: center;
+}
+
+.hero-text {
+    display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    height: auto;
+    width: auto;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-    height: 90vh;
-    width: auto;
-    background-color: #f3f3f3;
 }
 
 .hero-text-welcome {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 .hero-text-welcome > span:nth-child(1) {
     font-size: 3rem;
+    font-weight: lighter;
 }
 .hero-text-welcome > span:nth-child(2) {
     font-size: 3.8rem;
-    font-weight: bold;
+    font-weight: bold; 
 }
 .hero-text-welcome > span:nth-child(3) {
     font-size: 1.3rem;
-    margin-top: 2vw;
-    padding: 0 30px;
 }
 
-.hero-wrapper > .hero-buttons {
+.hero-buttons {
     display: flex;
     flex-direction: column;
 }
 
-.hero-wrapper > div > .start-btn {
+.start-btn {
     color: white;
-    padding: 3vh;
+    border-radius: 5px;
+    padding: 4vh;
     background-color: black;
     border: none;
     cursor: pointer;
-    font-size: 1.3rem;
-    margin-top: 2vw;
 }
 
-.hero-wrapper > div > .learn-more-btn {
+.learn-more-btn {
     cursor: pointer;
-    margin: 5vh 2vh 0 0;
-    font-size: 1.3rem;
+    margin-top: 4vh;
 }
 
 @media only screen and (min-width: 1200px) {
     .hero-wrapper {
-        background-image: url("../../images/backgroundImage.jpg");
+        flex-direction: column;
+        background-image: url("../../images/backgroundImage.png");
         background-repeat: no-repeat;
         background-size: 100vw 100vh;
+        align-items: flex-start;
+        justify-content: flex-start; 
+        padding: 0 2vw;
+    }
+
+    .bg-image-text {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+    }
+
+    .bg-image-text > span {
+        color: white;
+        background-color: black;
+        padding: 0.1vh 0.7vh 0.4vh 0.7vh;
+    }
+
+    .hero-text {
+        margin: 20vh auto auto 0;
+        align-items: start;
+    }
+
+    .hero-text-welcome {
+        text-align: start;
+    }
+    
+    .hero-text-welcome > span:nth-child(1) {
+        font-size: 5.5rem;
+        line-height: 0.3;
+        letter-spacing: -0.15rem;
+    }
+    
+    .hero-text-welcome > span:nth-child(2) {
+        font-size: 8.3rem;
+        letter-spacing: -0.4rem;
+    }
+    
+    .hero-text-welcome > span:nth-child(3) {
+        font-size: 1.41rem;
+        margin-bottom: 4vh;
+        letter-spacing: -0.04rem;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        align-items: center;
+        gap: 1.3vw;
+    }
+
+    .start-btn {
+        padding: 2.5vh;
+        font-size: 0.9rem;
+    }
+
+    .learn-more-btn {
+        cursor: pointer;
+        font-size: 1rem;
+        margin-top: 0;
     }
 }

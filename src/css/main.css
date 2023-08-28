@@ -6,3 +6,17 @@ body {
 .underline {
     text-decoration: underline;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        padding: 0 2vw;
+    }
+}

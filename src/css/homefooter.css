@@ -6,13 +6,18 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 2vw;
+    padding: 2vh 2vw;
 }
 
 .footer-wrapper > div {
     margin-bottom: 2vh; 
 }
 .footer-wrapper > .footer-text { order: 2; }
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+}
 
 .footer-links {
     display: none;
@@ -29,4 +34,72 @@
 
 .footer-quote-div > span:nth-child(1) {
     font-weight: bold;
+}
+
+@media only screen and (min-width: 1200px) {
+    .footer-wrapper {
+        display: flex;
+        flex-direction: row;
+        padding: 12.5vh 2vw;
+    }
+
+    .footer-text {
+        align-items: start;
+        font-weight: bold;
+        height: 40vh;
+        padding-right: 15vw;
+    }
+    .footer-text > img {
+        display: flex;
+        height: auto;
+        width: 7vh;
+    }
+    .footer-text > span:nth-child(3) {
+        margin-top: auto;
+    }
+
+    .footer-wrapper > .footer-block { 
+        order: 2; 
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        text-align: start;
+        gap: 6vh;
+    }
+    .footer-block > div:nth-child(2) {
+        height: 100%;
+    }
+    .footer-quote-div {
+        gap: 1.25vh;
+    }
+
+    .footer-links {
+        display: flex;
+    }
+
+    .footer-links > div {
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+        margin-right: 2vw;
+    }
+
+    .footer-links > div > span {
+        font-weight: bold;
+    }
+
+    .footer-links > div > li {
+        list-style-type: none;
+        color: grey;
+    }
+
+    .footer-links > div > li > ul {
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .footer-links > div > span:nth-last-child(1) {
+        margin-top: auto;
+        cursor: pointer;
+    }
 }

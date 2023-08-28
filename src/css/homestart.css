@@ -6,8 +6,8 @@
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
-    background-color: #f3f3f3;
-    padding: 3vh;
+    background-color: white;
+    padding: 10vh 3vh 10vh 3vh;
 }
 
 .start-text {
@@ -47,7 +47,6 @@
 
 .start-block > div > span:nth-child(3) {
     text-align: justify;
-    font-size: 1rem;
 }
 
 .start-firststep-btn {
@@ -57,4 +56,45 @@
     margin-top: 4vh;
 }
 
+@media only screen and (min-width: 1200px) {
+    .start-wrapper {
+        align-items: start;
+        text-align: start;
+        padding: 0 5vh; 
+        font-size: 1.4rem;
+        gap: 6vh;
+        padding: 10vh 2vw;
+    }
 
+    .start-text > span:nth-child(1) {
+        font-size: 3.9rem;
+    }
+
+    .start-text > span:nth-child(2) {
+        font-size: 1.4rem;
+        width: 36vw;
+    }
+
+    .start-block {
+        flex-direction: row;
+    }
+
+    .start-block > div > img {
+        height: 10vh;
+    }
+
+    .start-block > div {
+        align-items: start;
+        padding-right: 8vw;
+        height: auto;
+        line-height: 1.7;
+    }
+
+    .start-block > div > span:nth-child(2) {
+        margin-bottom: 2vh;
+    }
+
+    .start-firststep-btn {
+        font-size: 1rem;
+    }
+}
